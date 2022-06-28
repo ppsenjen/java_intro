@@ -43,5 +43,4 @@ public class Calculator2 {
         }
         System.out.println(num1 + " " + operator + " " + num2 + " = " + answer);
     }
-
 }
