@@ -19,7 +19,7 @@ public class Calculator2 {
         System.out.println("Please enter second number");
         num2 = scanObject.nextInt();
 
-        System.out.println("Which operation?");
+        System.out.println("Which operation? [/*-+]");
         operator = scanObject.next().charAt(0);
 
         switch (operator) {
@@ -41,6 +41,8 @@ public class Calculator2 {
                 }
             }
         }
-        System.out.println(num1 + " " + operator + " " + num2 + " = " + answer);
+        if(num2 != 0 && operator != '/'){
+            System.out.println(num1 + " " + operator + " " + num2 + " = " + answer);
+        }
     }
 }
