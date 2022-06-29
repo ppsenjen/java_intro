@@ -50,19 +50,20 @@ public class Calculator2 {
         }
         System.out.println("Do you want to continue?");
         
-       boolean continuelooping = true;
-       int number = 0;
-       
-       while(continuelooping == true){
-           System.out.println("continue executing");
-       
-       
-       if (number== 8)
-       {continuelooping = false;
-        }
+        String choice = "y";
+
+while(true) {
+    //Take input
+    System.out.print("Do you want to continue (y/n)?");
+    choice = reader.nextLine();
+
+    if(choice.equalsIgnoreCase("n")) break;
+    //else continue.
+}
+  
        
        }
 
         }
-    }
+    
 
