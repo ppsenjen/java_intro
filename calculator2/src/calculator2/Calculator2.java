@@ -10,6 +10,9 @@ public class Calculator2 {
         int num2;
         char operator;
         double answer = 0.0;
+       
+        
+       
 
         Scanner scanObject = new Scanner(System.in);
 
@@ -36,7 +39,8 @@ public class Calculator2 {
 
                 if (num2 != 0) {
                     answer = num1 / num2;
-                } else {
+                } else
+                {
                     System.out.println("Cannot divide by zero");
                 }
             }
@@ -44,5 +48,21 @@ public class Calculator2 {
         if(num2 != 0 && operator != '/'){
             System.out.println(num1 + " " + operator + " " + num2 + " = " + answer);
         }
+        System.out.println("Do you want to continue?");
+        
+       boolean continuelooping = true;
+       int number = 0;
+       
+       while(continuelooping == true){
+           System.out.println("continue executing");
+       
+       
+       if (number== 8)
+       {continuelooping = false;
+        }
+       
+       }
+
+        }
     }
-}
+
