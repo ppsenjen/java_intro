@@ -10,6 +10,8 @@ public class Calculator2 {
         int num2;
         char operator;
         double answer = 0.0;
+        boolean yesorno = true;
+       
        
         
        
@@ -47,23 +49,32 @@ public class Calculator2 {
         }
         if(num2 != 0 && operator != '/'){
             System.out.println(num1 + " " + operator + " " + num2 + " = " + answer);
-        }
-        System.out.println("Do you want to continue?");
-        
-        String choice = "y";
+            
+            System.out.println("Would you like to continue?");
+                String again = input.nextLine();
+                if (again.equals("yes")) {
+                    yesorno = true;
+                } else if (again.equals("no")) {
+                    yesorno = false;
+                    System.out.print("have a good day!");
 
-while(true) {
-    //Take input
-    System.out.print("Do you want to continue (y/n)?");
-    choice = reader.nextLine();
-
-    if(choice.equalsIgnoreCase("n")) break;
-    //else continue.
-}
+                }
+            } while (yesorno)  
+            
+            
+            
+            
+       
+     
+    
+    
+    
+    
+      
   
        
-       }
+       
 
-        }
+      
     
 
