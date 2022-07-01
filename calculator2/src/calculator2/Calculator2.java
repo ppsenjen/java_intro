@@ -10,14 +10,11 @@ public class Calculator2 {
         int num2;
         char operator;
         double answer = 0.0;
-        boolean yesorno = true;
-       
-       
-        
-       
-
+      String get;
+      
         Scanner scanObject = new Scanner(System.in);
-
+        
+     do {
         System.out.println("Please enter first number");
         num1 = scanObject.nextInt();
 
@@ -51,16 +48,17 @@ public class Calculator2 {
             System.out.println(num1 + " " + operator + " " + num2 + " = " + answer);
             
             System.out.println("Would you like to continue?");
-                String again = input.nextLine();
-                if (again.equals("yes")) {
-                    yesorno = true;
-                } else if (again.equals("no")) {
-                    yesorno = false;
-                    System.out.print("have a good day!");
-
-                }
-            } while (yesorno)  
+            get = scanObject.next();
             
+        }
+        while (get.equals("Yes"));
+            
+     }
+     }     
+            
+        
+    
+
             
             
             
